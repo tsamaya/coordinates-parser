@@ -1,0 +1,43 @@
+{
+  "name": "coordinate-parser",
+  "version": "0.1.0",
+  "description": "validate and parse WGS 84 Coordinates",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d",
+    "codecov": "codecov",
+    "coverage": "npm run test && npm run codecov",
+    "lint": "eslint .",
+    "prebuild": "npm test",
+    "pretest": "npm run prettier && npm run lint",
+    "prettier": "./node_modules/.bin/prettier  --config .prettierrc --write src/**/*.js __tests__/**/*.js",
+    "test": "jest --coverage",
+    "test:watch": "npm test -- --watch",
+    "webpack": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsamaya/coordinate-parser.git"
+  },
+  "keywords": [],
+  "author": "Arnaud Ferrand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsamaya/coordinate-parser/issues"
+  },
+  "homepage": "https://github.com/tsamaya/coordinate-parser#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "codecov": "^3.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2",
+    "webpack": "^3.10.0"
+  }
+}
