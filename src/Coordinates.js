@@ -21,7 +21,7 @@ class Coordinates {
    * @return {String} [description]
    */
   toString() {
-    return `(${this.latitude},${this.longitude})`;
+    return `(${this.lat},${this.lng})`;
   }
 }
 
